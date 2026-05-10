@@ -1,43 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.carousel-item');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentSlide = 0;
-    let slideInterval;
+const items = document.querySelectorAll(".carousel-item");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const navLinks = document.getElementById("navLinks");
 
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
+let index = 0;
 
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
+function showSlide(i) {
+    items.forEach((item) => item.classList.remove("active"));
+    items[i].classList.add("active");
+}
 
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
+nextBtn.addEventListener("click", () => {
+    index = (index + 1) % items.length;
+    showSlide(index);
+});
 
-    function startAutoSlide() {
-        slideInterval = setInterval(nextSlide, 5000);
-    }
+prevBtn.addEventListener("click", () => {
+    index = (index - 1 + items.length) % items.length;
+    showSlide(index);
+});
 
-    function resetAutoSlide() {
-        clearInterval(slideInterval);
-        startAutoSlide();
-    }
+// Auto-advance slides
+setInterval(() => {
+    index = (index + 1) % items.length;
+    showSlide(index);
+}, 5000);
 
-    nextBtn.addEventListener('click', () => {
-        nextSlide();
-        resetAutoSlide();
+// Mobile Menu Toggle
+mobileMenuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // Simple animation for burger menu
+    const spans = mobileMenuBtn.querySelectorAll("span");
+    mobileMenuBtn.classList.toggle("open");
+});
+
+// Close menu when clicking a link
+document.querySelectorAll(".center a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
     });
-
-    prevBtn.addEventListener('click', () => {
-        prevSlide();
-        resetAutoSlide();
-    });
-
-    // Start the auto-slide
-    startAutoSlide();
 });
