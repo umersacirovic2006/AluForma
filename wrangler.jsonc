@@ -6,7 +6,15 @@
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "exclude": [
+      "**/.git/**",
+      ".git/**",
+      ".git",
+      "wrangler.jsonc",
+      ".gitignore",
+      ".wranglerignore"
+    ]
   },
   "compatibility_flags": [
     "nodejs_compat"
