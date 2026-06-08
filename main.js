@@ -98,24 +98,24 @@ calcBtn.addEventListener("click", () => {
 const catalogData = {
     windows: [
         { title: "GALILEO", desc: "Galileo – pogled bez granica", img: "assets/images/AWS 75 PD/AWS_75_PD_SI_k.webp", badge: "PREPORUČUJEMO" },
-        { title: "AMADEUS", desc: "Simfonija u formi PVC prozora", img: "assets/images/AWS 90 SI/AWS_90_SI_k.webp", badge: "PREPORUČUJEMO" },
-        { title: "FRIDA", desc: "PVC prozor za više svetlosti", img: "assets/images/AWS 70 HI/AWS_70_HI_e.jpg", badge: "NOVO" },
-        { title: "ECHO", desc: "Savršen sklad cijene i kvaliteta", img: "assets/images/AWS 75 PD/AWS_75_PD_SI_s_Festfeld.jpg" }
+        { title: "AMADEUS", desc: "Simfonija u formi PVC prozora", img: "assets/images/AWS 90 SI/AWS_90_SI_plus_e.webp", badge: "PREPORUČUJEMO" },
+        { title: "FRIDA", desc: "PVC prozor za više svetlosti", img: "assets/images/AWS 70 HI/AWS_70_SC_s_Aussenverglasung.webp", badge: "NOVO" },
+        { title: "ECHO", desc: "Savršen sklad cijene i kvaliteta", img: "assets/images/AWS 75 PD/AWS_75_PD_SI_s_Festfeld.webp" }
     ],
     doors: [
         { title: "ADS 75 SI", desc: "Vrhunska toplotna izolacija", img: "assets/images/ADS 75 SI/ADS_75_SI_e.webp", badge: "PREPORUČUJEMO" },
-        { title: "AD UP 75", desc: "Univerzalni sistem za ulazna vrata", img: "assets/images/AD UP 75/AD_UP_75_e.jpg" },
-        { title: "ADS 90 SI", desc: "Maksimalna energetska efikasnost", img: "assets/images/ADS 90 SI/ADS_90_SI_e.jpg" }
+        { title: "AD UP 75", desc: "Univerzalni sistem za ulazna vrata", img: "assets/images/AD UP 75/AD_UP_75_EInsatzF_Glas_inneno_E.webp" },
+        { title: "ADS 90 SI", desc: "Maksimalna energetska efikasnost", img: "assets/images/ADS 90 SI/ADS_90_SI_m_01.webp" }
     ],
     sliding: [
         { title: "ASE 67 PD", desc: "Panoramski dizajn za maksimalan pogled", img: "assets/images/ASE 67 PD/ASE_67_PD_s_Schwellenbereich_abgesenkte_Laufschiene.webp", badge: "PREPORUČUJEMO" },
-        { title: "ASS 77 PD", desc: "Minimalistički klizni sistem", img: "assets/images/ASS 77 PD/ASS_77_PD_1.jpg" },
-        { title: "ThermoSlide", desc: "Klizna vrata za pasivne kuće", img: "assets/images/ThermoSlide/Schueco_ThermoSlide_e.jpg" }
+        { title: "ASS 77 PD", desc: "Minimalistički klizni sistem", img: "assets/images/ASS 77 PD/ASS_77_PD_d_Explosion_02.webp" },
+        { title: "ThermoSlide", desc: "Klizna vrata za pasivne kuće", img: "assets/images/ThermoSlide/2852a14_50P-02.webp" }
     ],
     other: [
         { title: "FWS 50", desc: "Standardni fasadni sistem", img: "assets/images/FWS 50/1546a2.webp" },
-        { title: "UDC 80", desc: "Element fasada za brzu gradnju", img: "assets/images/UDC 80/UDC_80_1.jpg" },
-        { title: "VentoAir", desc: "Sistem za ventilaciju prozora", img: "assets/images/VentoAir/Schueco_VentoAir_e.jpg" }
+        { title: "UDC 80", desc: "Element fasada za brzu gradnju", img: "assets/images/UDC 80/UDC_80_s.webp" },
+        { title: "VentoAir", desc: "Sistem za ventilaciju prozora", img: "assets/images/VentoAir/VentoAir_d_KS_Luftstrom.webp" }
     ]
 };
 
